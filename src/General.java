@@ -1,18 +1,18 @@
 public class General extends Man implements  CapableToCombat{
 
-    Commander [] comanders =  new Commander[2];
+    Commander [] commanders =  new Commander[2];
 
     @Override
     public void report() {
         System.out.println("I am capable to combat like a general");
     }
-    public void setComanders(Commander comanders1, Commander comanders2) {
-        this.comanders[0] = comanders1;
-        this.comanders[1] = comanders2;
+    public void setCommanders(Commander commanders1, Commander commanders2) {
+        this.commanders[0] = commanders1;
+        this.commanders[1] = commanders2;
     }
 
     @Override
     public Commander[] subordinate() {
-        return comanders;
+        return commanders;
     }
 }
